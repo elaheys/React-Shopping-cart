@@ -1,0 +1,126 @@
+.container{
+    width: 220px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+}
+
+
+.container:hover{
+    box-shadow: rgba(0, 0, 0, 0.09)0 2px 1px,rgba(0, 0, 0, 0.09)0 4px 2px
+    ,rgba(0, 0, 0, 0.09)0 8px 4px,rgba(0, 0, 0, 0.09)0 16px 8px
+    ,rgba(0, 0, 0, 0.09)0 32px 16px;
+}
+
+.cardImage {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.container h3{
+    text-align: left;
+    color: rgb(89, 88, 88);
+    font-size: 1.1rem;
+    margin: 25px 20px 15px;
+}
+
+.container p{
+    text-align: left;
+    color: rgb(89, 88, 88);
+    font-size: .9rem;
+    margin: 15px 20px ;
+    font-weight: 500;
+}
+
+.linkContainer a{
+    text-decoration: none;
+    color: rgb(35, 29, 192);
+    font-size: .95rem;
+    font-weight: bold;
+}
+
+.linkContainer a:hover{
+    color: rgb(63, 63, 197);
+}
+
+.linkContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+    align-items: center;
+}
+
+.buttonContainer button{
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color:#1a73e8;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 120px;
+    height: 30px;
+    transition: all 0.2s ease-in;
+    margin-left: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25 ) 0px 4px 12px -2px,
+       rgba(0, 0, 0, 0.03) 0px 3px 7px -3px;
+}
+
+.smallButton{
+    width: 30px !important;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 33px;
+}
+
+.smallButton img{
+    width: 20px;
+    height: 18px;
+}
+
+.buttonContainer button:hover{
+    background-color: #114487;
+    transition: all 0.2s ease-in-out;
+}
+
+.counter{
+    display: inline-block;
+    width: 20px;
+    color: #1a73e8;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 1.2rem;
+}
+
+@media(max-width:1000px){
+    .container{
+        width: 45%;
+    }
+}
+@media(max-width:768px){
+    .container{
+        width: 45%;
+    }
+    .cardImage{
+        width: 200px;
+    }
+}
+
+@media(max-width:555px){
+    .container{
+        width: 70%;
+    }
+    .cardImage{
+        width: 230px;
+    }
+}
+
+@media(max-width:400px){
+    .container{
+        width: 90%;
+    }
+}
